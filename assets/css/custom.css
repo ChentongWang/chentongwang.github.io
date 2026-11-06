@@ -157,6 +157,7 @@ html[data-theme="dark"] .publication-featured {
 .publication-meta { flex-wrap: wrap; }
 .publication-status { color: var(--luka-accent); }
 .equal-contribution, .publication-note { font-size: 12px; color: var(--luka-secondary); margin: 8px 0; }
+.equal-contribution { font-weight: 700; color: var(--luka-text); }
 .venue { color: var(--luka-accent); background: var(--luka-border); border-radius: 4px; padding: 3px 7px; font-weight: 600; }
 .publication h3 { font-size: 18px; font-weight: 600; line-height: 1.6; margin: 14px 0 10px; }
 body.theme-luka .publication h3 a { color: var(--luka-text); }
