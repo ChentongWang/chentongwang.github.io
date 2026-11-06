@@ -1,218 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html data-theme="light" lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name - Homepage</title>
-  <meta name="description" content="A minimal academic homepage template for researchers, students, and creators.">
-  <meta name="keywords" content="academic homepage, personal website, portfolio, researcher, student">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/a860a211d3.js" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="assets/css/font_sans_serif.css">
-  <link rel="stylesheet" href="assets/css/theme-luka.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- 编辑网站标题和搜索简介 -->
+<title>Chentong Wang · 个人主页</title>
+<meta content="Chentong Wang 的个人学术主页，介绍教育背景、高光谱处理与深度学习研究，以及面向具身智能的博士研究方向。" name="description"/>
+<link href="assets/img/monogram.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/css/theme-luka.css" rel="stylesheet"/>
+<link href="assets/css/custom.css" rel="stylesheet"/>
+<script src="assets/js/preferences.js"></script>
+<script defer="" src="assets/js/theme.js"></script>
 </head>
 <body class="theme-luka">
-  <nav class="top-nav">
-    <div class="nav-container">
-      <div class="nav-left">
-        <a href="./">Home</a>
-      </div>
-      <div class="nav-right">
-        <button id="themeToggle" class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <div class="wrapper">
-    <header class="sidebar">
-      <div class="profile-card">
-        <a class="image avatar">
-          <img src="assets/img/avatar.svg" alt="Profile avatar">
-        </a>
-
-        <h1 class="site-name">Your Name</h1>
-        <p class="site-email">your.email@example.com</p>
-
-        <div class="social-icons">
-          <a href="mailto:your.email@example.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://scholar.google.com/" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-          <a href="https://github.com/yourname" title="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://yourblog.example.com" title="Blog"><i class="fa-solid fa-rss"></i></a>
-        </div>
-
-        <div class="visitor-card">
-          <div class="visitor-card-title">Visitor Map</div>
-          <div class="visitor-card-body">
-            Replace this card with your own ClustrMaps image or analytics widget.
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section class="content">
-      <div class="section" id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="section-body">
-          <p>Hello! I am <strong>Your Name</strong>, a student / researcher / engineer working on topics that matter to you. This template is designed to make personal academic websites clean, readable, and easy to adapt.</p>
-          <p>You can use this section to briefly introduce your background, research interests, and current affiliations. Keep it concise and personal.</p>
-          <p><strong><a href="#" target="_blank" rel="noopener">Download my CV</a></strong> (replace this link with your resume)</p>
-        </div>
-      </div>
-
-      <div class="section" id="education">
-        <h2 class="section-title">Education</h2>
-        <div class="section-body">
-          <div class="card">
-            <div class="experience-item">
-              <img src="assets/img/institution.svg" alt="Institution logo" class="institution-logo">
-              <div class="experience-content">
-                <p class="exp-title"><strong>Your University</strong></p>
-                <p class="exp-detail">B.S. / M.S. / Ph.D. in Your Major</p>
-                <p class="exp-period">2022 - 2026</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section" id="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="section-body">
-          <div class="card timeline-item">
-            <div class="experience-item">
-              <img src="assets/img/institution.svg" alt="Institution logo" class="institution-logo">
-              <div class="experience-content">
-                <p class="exp-title"><strong>Research Lab / Company Name</strong></p>
-                <p class="exp-detail">Research Intern / Engineer / Assistant</p>
-                <p class="exp-detail"><em>Advisor:</em> Prof. / Dr. Name</p>
-                <p class="exp-period">2025 - Present</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card timeline-item">
-            <div class="experience-item">
-              <img src="assets/img/institution.svg" alt="Institution logo" class="institution-logo">
-              <div class="experience-content">
-                <p class="exp-title"><strong>Previous Institution</strong></p>
-                <p class="exp-detail">Research Intern / Teaching Assistant</p>
-                <p class="exp-detail"><em>Advisor:</em> Prof. / Dr. Name</p>
-                <p class="exp-period">2024 - 2025</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section" id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="section-body">
-          <div class="card project-card">
-            <a href="https://github.com/yourname/project-name">Project Name</a>: A short one-line summary describing what this project does and why it matters.
-          </div>
-        </div>
-      </div>
-
-      <div class="section" id="publications">
-        <h2 class="section-title">Publications</h2>
-        <div class="section-body">
-          <div class="publications">
-            <ol class="bibliography">
-              <li>
-                <div class="pub-row">
-                  <div class="pub-content">
-                    <div class="title">Paper Title Goes Here</div>
-                    <div class="author"><strong>Your Name</strong>, Coauthor A, Coauthor B</div>
-                    <div class="periodical"><em><strong>Conference / Journal / arXiv</strong></em></div>
-                    <div class="links">
-                      <a href="#">Paper</a> / <a href="#">Code</a> / <a href="#">Project</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-
-      <div class="section" id="awards">
-        <h2 class="section-title">Awards</h2>
-        <div class="section-body">
-          <div class="awards-grid">
-            <div class="award-item">
-              <span class="award-icon">🏅</span>
-              <div class="award-text"><strong>Award Name</strong></div>
-            </div>
-            <div class="award-item">
-              <span class="award-icon">🥇</span>
-              <div class="award-text"><strong>Competition / Scholarship / Honor</strong></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <p>
-        &copy; 2026 Your Name. All rights reserved.
-        <br>
-        <span class="template-credit"><a href="https://github.com/wzsyyh/luka-homepage-template">Luka Homepage Template</a> by <a href="https://wzsyyh.github.io/">Yuheng Yang</a></span>
-      </p>
-    </footer>
-  </div>
-
-  <script src="assets/js/scale.fix.js"></script>
-  <script>
-    (function() {
-      const themeToggle = document.getElementById('themeToggle');
-      const icon = themeToggle.querySelector('i');
-
-      function setTheme(isDark) {
-        document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
-        icon.classList.toggle('fa-sun', isDark);
-        icon.classList.toggle('fa-moon', !isDark);
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      }
-
-      const savedTheme = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setTheme(savedTheme ? savedTheme === 'dark' : prefersDark);
-
-      themeToggle.addEventListener('click', function() {
-        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        setTheme(!isDark);
-      });
-
-      if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver(function(entries) {
-          entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.section').forEach(function(el) {
-          observer.observe(el);
-        });
-      } else {
-        document.querySelectorAll('.section').forEach(function(el) {
-          el.classList.add('visible');
-        });
-      }
-    })();
-  </script>
+<a class="skip-link" data-en="Skip to content" href="#main">跳转到正文</a>
+<nav aria-label="主导航" class="top-nav" data-en-aria-label="Main navigation">
+<div class="nav-container">
+<div class="nav-left"><a aria-label="Chentong Wang 首页" data-en-aria-label="Chentong Wang home" href="./">CW<span class="brand-dot">.</span></a></div>
+<div class="nav-right">
+<a data-en="About" href="#about">关于</a><a data-en="Papers" href="#publications">论文</a><a data-en="Code" href="#projects">项目</a>
+<div class="preferences" hidden="">
+<select aria-label="页面语言" data-en-aria-label="Page language" id="languageSelect">
+<option data-en="Auto language" value="auto">自动语言</option>
+<option value="zh">中文</option><option value="en">English</option>
+</select>
+<select aria-label="页面主题" data-en-aria-label="Color theme" id="themeSelect">
+<option data-en="☀ Light" value="light">☀ 浅色</option>
+<option data-en="☾ Dark" value="dark">☾ 深色</option>
+<option data-en="System" value="system">跟随系统</option>
+</select>
+</div>
+</div>
+</div>
+</nav>
+<div class="wrapper">
+<header class="sidebar">
+<div class="profile-card">
+<!-- 替换头像：把照片放进 assets/img/，然后修改下方 src 和 alt -->
+<div class="image avatar"><img alt="Chentong Wang 选择的个人头像" data-en-alt="Profile image selected by Chentong Wang" height="220" src="assets/img/avatar.jpg" width="220"/></div>
+<h1 class="site-name">Chentong Wang</h1>
+<p class="profile-subtitle" data-en="Hyperspectral Processing · Deep Learning">高光谱处理 · 深度学习</p>
+<!-- 使用你在 DTU-Net 公开仓库中提供的学术邮箱 -->
+<p class="site-email"><a href="mailto:chentong_wang@tju.edu.cn">chentong_wang@tju.edu.cn</a></p>
+<div class="profile-links"><a href="https://github.com/ChentongWang">GitHub ↗</a><a data-en="Email ↗" href="mailto:chentong_wang@tju.edu.cn">邮件联系 ↗</a></div>
+<div class="research-note"><span class="eyebrow">RESEARCH FOCUS</span><p data-en="From spectral perception&lt;br&gt;to embodied intelligence.">从光谱感知，<br/>走向具身智能。</p><span class="muted">Perception · Learning · Intelligence</span></div>
+</div>
+</header>
+<main class="content" id="main">
+<!-- 编辑区 1：个人简介与研究方向。中文修改正文，英文修改 data-en。 -->
+<section aria-labelledby="about-title" class="section" id="about">
+<p class="eyebrow">WELCOME TO MY HOMEPAGE</p>
+<h2 class="intro-title" data-en="Hello, I’m&lt;br&gt;&lt;span&gt;Chentong Wang.&lt;/span&gt;" id="about-title">你好，我是<br/><span>Chentong Wang.</span></h2>
+<div class="section-body intro-copy"><p data-en="I received my bachelor’s degree in Information and Computing Science from NCEPU and am currently pursuing a master’s degree in Mathematics at TJU.">我本科毕业于 NCEPU 数理系信息与计算科学专业，目前在 TJU 数学学院攻读数学专业硕士学位。</p><p data-en="I will soon join the Internet of Things Thrust, Information Hub, at HKUST(GZ) as a PhD student.">即将前往 HKUST(GZ) 信息枢纽物联网学域攻读博士学位。</p><p data-en="My current research focuses on &lt;strong&gt;Hyperspectral Processing&lt;/strong&gt; and &lt;strong&gt;Deep Learning&lt;/strong&gt;. During my PhD, I plan to explore &lt;strong&gt;3D Vision for Embodied Intelligence&lt;/strong&gt; and &lt;strong&gt;Multi Embodied Agent&lt;/strong&gt;.">当前研究聚焦 <strong>Hyperspectral Processing</strong> 和 <strong>Deep Learning</strong>。博士阶段将探索 <strong>3D Vision for Embodied Intelligence</strong> 和 <strong>Multi Embodied Agent</strong>。</p></div>
+</section>
+<!-- 编辑区 2：论文。复制 article 即可新增，记得同步更新 BibTeX。 -->
+<section aria-labelledby="publications-title" class="section" id="publications">
+<div class="section-heading"><h2 class="section-title" data-en="Publications" id="publications-title">论文发表</h2><span class="section-caption">PUBLICATIONS</span></div><article class="publication publication-featured" id="paper-dtunet"><div class="paper-milestone">
+<span class="pinned-badge" data-en="Pinned">置顶</span>
+<div><span class="milestone-title" data-en="My first research paper">第一篇研究工作</span><p data-en="Where my research journey began.">科研旅程的起点。</p></div>
+</div><figure class="paper-figure">
+<a aria-label="查看 DTU-Net 网络框架大图（新窗口）" data-en-aria-label="View the DTU-Net framework in a new tab" href="assets/img/dtunet-framework.png" rel="noopener" target="_blank">
+<img alt="DTU-Net 整体网络框架，包含光谱与空间双分支 Dilated-Transformer 编码器和 PPNMM 解码器" data-en-alt="DTU-Net framework with spectral and spatial encoder branches and a PPNMM decoder" height="1124" loading="lazy" src="assets/img/dtunet-framework.png" width="2538"/>
+</a>
+<figcaption><span data-en="DTU-Net framework">DTU-Net 整体网络框架</span><span data-en="View full image ↗">点击查看大图 ↗</span></figcaption>
+</figure><div class="publication-details">
+<!-- 论文主图：替换此图片即可更新，点击图片可查看原尺寸。 -->
+<div class="publication-meta"><span class="venue">IEEE TGRS</span><span>2026</span></div>
+<h3><a href="https://doi.org/10.1109/TGRS.2026.3658361">DTU-Net: A Multi-Scale Dilated Transformer Network for Nonlinear Hyperspectral Unmixing</a></h3>
+<p class="authors"><strong>Chentong Wang</strong>, Jincheng Gao, Fei Zhu, Abderrahim Halimi, Cédric Richard</p>
+<p class="muted journal">IEEE Transactions on Geoscience and Remote Sensing, vol. 64, pp. 1–17.</p>
+<div class="paper-links"><a data-en="Paper ↗" href="https://doi.org/10.1109/TGRS.2026.3658361">论文 ↗</a><a data-en="Code ↗" href="https://github.com/ChentongWang/DTU-Net">代码 ↗</a></div>
+<details class="citation"><summary data-en="BibTeX citation">BibTeX 引用</summary><pre><code>@article{wang2026dtunet,
+  author = {Wang, Chentong and Gao, Jincheng and Zhu, Fei
+            and Halimi, Abderrahim and Richard, Cédric},
+  title = {DTU-Net: A Multi-Scale Dilated Transformer Network
+           for Nonlinear Hyperspectral Unmixing},
+  journal = {IEEE Transactions on Geoscience and Remote Sensing},
+  year = {2026},
+  volume = {64},
+  pages = {1--17},
+  doi = {10.1109/TGRS.2026.3658361}
+}</code></pre></details>
+</div></article>
+<article class="publication" id="paper-hetdiff"><figure class="paper-figure">
+<a aria-label="查看 HetDiff 框架大图（新窗口）" data-en-aria-label="View the HetDiff framework in a new tab" href="assets/img/hetdiff-framework.png" rel="noopener" target="_blank">
+<img alt="HetDiff 整体框架，包含 HUZSNet、不确定性引导扩散与 VNSSD 模块" data-en-alt="HetDiff framework with HUZSNet, uncertainty-guided diffusion and VNSSD" height="700" loading="lazy" src="assets/img/hetdiff-framework.png" width="2020"/>
+</a>
+<figcaption><span data-en="HetDiff framework">HetDiff 整体框架</span><span data-en="View full image ↗">点击查看大图 ↗</span></figcaption>
+</figure><div class="publication-details">
+<div class="publication-meta"><span class="venue">ACM MM 2026</span><span class="publication-status" data-en="Accepted">已接收</span></div>
+<h3>HetDiff: Uncertainty-Guided Diffusion with Spectral Variability Modeling for Hyperspectral Pansharpening</h3>
+<p class="authors">Yan Wang<sup>*</sup>, <strong>Chentong Wang<sup>*</sup></strong>, Yuping Duan, Fei Zhu</p>
+<p class="equal-contribution" data-en="* Equal contribution (co-first authors).">* 共同第一作者，贡献相同。</p>
+<p class="muted journal" data-en="Accepted at the 34th ACM International Conference on Multimedia (ACM MM 2026).">已被第 34 届 ACM International Conference on Multimedia（ACM MM 2026）接收。</p>
+<p class="publication-note" data-en="Accepted · Online publication pending">已接收 · 等待在线发表</p>
+</div></article>
+<article class="publication" id="paper-igarss"><figure class="paper-figure">
+<a aria-label="查看 DEQ-Unmix 框架大图（新窗口）" data-en-aria-label="View the DEQ-Unmix framework in a new tab" href="assets/img/deq-unmix-framework.png" rel="noopener" target="_blank">
+<img alt="DEQ-Unmix 整体框架、平衡层与可训练梯度算子" data-en-alt="DEQ-Unmix framework, equilibrium layer and trainable gradient operator" height="1080" loading="lazy" src="assets/img/deq-unmix-framework.png" width="2160"/>
+</a>
+<figcaption><span data-en="DEQ-Unmix framework">DEQ-Unmix 整体网络框架</span><span data-en="View full image ↗">点击查看大图 ↗</span></figcaption>
+</figure><div class="publication-details">
+<div class="publication-meta"><span class="venue">IEEE IGARSS</span><span>2026</span></div>
+<h3><a href="https://ieeexplore.ieee.org/document/11730739">A Deep Equilibrium Network for Hyperspectral Unmixing</a></h3>
+<p class="authors"><strong>Chentong Wang</strong>, Jincheng Gao, Fei Zhu, Jie Chen</p>
+<p class="muted journal">IGARSS 2026 – IEEE International Geoscience and Remote Sensing Symposium, pp. 5376–5380.</p>
+<div class="paper-links"><a data-en="Paper ↗" href="https://ieeexplore.ieee.org/document/11730739">论文 ↗</a><a data-en="Preprint ↗" href="https://arxiv.org/abs/2604.11279">预印本 ↗</a></div>
+<details class="citation"><summary data-en="BibTeX citation">BibTeX 引用</summary><pre><code>@inproceedings{wang2026dequnmix,
+  author = {Wang, Chentong and Gao, Jincheng and Zhu, Fei and Chen, Jie},
+  title = {A Deep Equilibrium Network for Hyperspectral Unmixing},
+  booktitle = {IGARSS 2026 - 2026 IEEE International Geoscience and Remote Sensing Symposium},
+  year = {2026},
+  pages = {5376--5380},
+  doi = {10.1109/IGARSS60577.2026.11730739}
+}</code></pre></details>
+</div></article>
+</section>
+<!-- 编辑区 3：项目。复制 article 即可新增。 -->
+<section aria-labelledby="projects-title" class="section" id="projects">
+<div class="section-heading"><h2 class="section-title" data-en="Open-source Projects" id="projects-title">开源项目</h2><span class="section-caption">SELECTED CODE</span></div>
+<article class="project-entry">
+<span aria-hidden="true" class="project-number">01</span>
+<div><h3><a href="https://github.com/ChentongWang/DTU-Net">DTU-Net ↗</a></h3><p data-en="A multi-scale dilated Transformer for nonlinear hyperspectral unmixing, with a PyTorch implementation and scripts for comparative experiments.">面向非线性高光谱解混的多尺度膨胀 Transformer 网络，提供 PyTorch 实现与比较实验脚本。</p><span class="project-label">Python / PyTorch</span></div>
+</article>
+<article class="project-entry">
+<span aria-hidden="true" class="project-number">02</span>
+<div><h3><a href="https://github.com/ChentongWang/DEQ4Unmixing">DEQ4Unmixing ↗</a></h3><p data-en="Research code for deep equilibrium models for unsupervised hyperspectral unmixing. The repository currently provides a preview version. See the repository for updates.">面向无监督高光谱解混的深度平衡模型研究代码。当前仓库提供预览版本，后续更新请以仓库说明为准。</p><span class="project-label">Python / Preview</span></div>
+</article>
+<a class="all-projects" data-en="View all repositories on GitHub ↗" href="https://github.com/ChentongWang?tab=repositories">查看全部 GitHub 仓库 ↗</a>
+</section>
+<!-- 编辑区 4：教育经历。中文修改正文，英文修改 data-en。 -->
+<section aria-labelledby="education-title" class="section" id="education">
+<div class="section-heading"><h2 class="section-title" data-en="Education" id="education-title">教育经历</h2><span class="section-caption">EDUCATION</span></div>
+<ol class="education-list">
+<li class="education-entry">
+<p class="education-date" data-en="Sep 2024 – Present">2024.09 – 至今</p>
+<div class="education-details"><img alt="天津大学校徽" class="education-logo" data-en-alt="Tianjin University seal" height="64" loading="lazy" src="assets/img/tju-logo.png" width="64"/><div class="education-summary">
+<h3 data-en="Tianjin University">天津大学</h3>
+<p data-en="School of Mathematics · Mathematics">数学学院 · 数学专业</p>
+<span class="education-degree" data-en="Master’s degree in progress">硕士在读</span>
+</div></div>
+</li>
+<li class="education-entry">
+<p class="education-date" data-en="Sep 2020 – Jul 2024">2020.09 – 2024.07</p>
+<div class="education-details"><img alt="华北电力大学校徽" class="education-logo" data-en-alt="North China Electric Power University seal" height="64" loading="lazy" src="assets/img/ncepu-logo.png" width="64"/><div class="education-summary">
+<h3 data-en="North China Electric Power University">华北电力大学</h3>
+<p data-en="Department of Mathematics and Physics · Information and Computing Science">数理系 · 信息与计算科学专业</p>
+<span class="education-degree" data-en="Bachelor’s degree">本科</span>
+</div></div>
+</li>
+</ol>
+</section>
+<!-- 教育经历可在上方 education 区块自行编辑。 -->
+<section aria-labelledby="contact-title" class="section contact-section" id="contact">
+<p class="eyebrow">LET’S CONNECT</p><h2 data-en="Let’s connect." id="contact-title">欢迎交流。</h2>
+<p data-en="If you are interested in the research or code, feel free to get in touch.">如果你对相关研究或代码感兴趣，欢迎联系。</p>
+<a href="mailto:chentong_wang@tju.edu.cn">chentong_wang@tju.edu.cn ↗</a>
+</section>
+</main>
+<footer class="site-footer"><p>© <span id="year">2026</span> Chentong Wang.<br/><span class="template-credit" data-en='Based on &lt;a href="https://github.com/wzsyyh/luka-homepage-template"&gt;Luka Homepage Template&lt;/a&gt; · &lt;a href="https://wzsyyh.github.io/"&gt;Yuheng Yang&lt;/a&gt;'>基于 <a href="https://github.com/wzsyyh/luka-homepage-template">Luka Homepage Template</a> · <a href="https://wzsyyh.github.io/">Yuheng Yang</a></span></p></footer>
+</div>
 </body>
 </html>
